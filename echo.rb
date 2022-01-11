@@ -34,10 +34,10 @@ loop do
   rolls = params["rolls"].to_i
   sides = params["sides"].to_i
 
-  # rolls.times do 
-  #   roll = rand(sides) + 1
-  #   client.puts "<p>", roll, "</p>"
-  # end
+  rolls.times do 
+    roll = rand(sides) + 1
+    client.puts "<p>", roll, "</p>"
+  end
 
   client.puts "</body>"
   client.puts "</html>"

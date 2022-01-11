@@ -20,6 +20,8 @@ loop do
 
   http_method, path, params = parse_request(request_line, )
 
+  next unless request_line
+
   client.puts "HTTP/1.1 200 OK"
   client.puts "Content-Type: text/html\r\n\r\n"
   client.puts "<html>"
