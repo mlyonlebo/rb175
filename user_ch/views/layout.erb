@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <%= yield %>
+    </div>
+
+    <p>There are <%=@user_count.to_s%> users and <%=@interest_count.to_s%> interests</p>
+  </body>
+</html>
