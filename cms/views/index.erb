@@ -1,0 +1,18 @@
+<ul>
+  <% @files.each do |file_name| %>
+    <li>
+      <a href=<%= "/#{file_name}/edit" %>><%= display_title(file_name) %></a> |
+      <form method="post" action=<%= "/#{file_name}/delete" %> class="inline">
+        <button type="submit" class="link-button">trash</button>
+      </form>
+    </li> 
+  <% end %>
+  <br>
+  <a href="/new">New Classic</a>
+  <br>
+  <br>
+  <form action="/users/signout" method="post">
+    <label>Signed in as <%= session[:username] %></label>
+    <input type="submit" value="Sign Out">
+  </form>
+</ul>

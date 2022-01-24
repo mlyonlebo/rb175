@@ -1,0 +1,12 @@
+<form action=<%= "/#{@file_name}" %> method="post">
+  <label for="edit">Ruin the content of '<%= display_title(@file_name) %>':</label>
+  <br>
+  <textarea rows="10" cols="60" name="new_file_content"><%= @file_content %></textarea>
+  <br>
+  <input type="submit" value="Save changes">
+</form>
+
+<h3> Suggested Edits </h3>
+<ul>
+  <li><a href="/">Transform Tom Buchanan</a>, racist Yaley wifebeater, into a grotesquely obese circus seal.</li>
+</ul>
