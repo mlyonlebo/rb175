@@ -36,10 +36,18 @@ helpers do
 end
 
 get "/" do
-  @title = "The Adventures of Sherlock Holmes"
-
-  erb :home
+  erb :home, layout: :layout
 end
+
+# get "/" do
+#   @title = "The Adventures of Sherlock Holmes"
+
+#   erb :home
+# end
+
+# get "/:book/" do
+#   @title = 
+# end
 
 get "/chapters/:number" do
   @chap_num = params['number']
